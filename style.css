@@ -19,6 +19,9 @@ a {
 ul {
   list-style-type: none;
 }
+i {
+  cursor: pointer;
+}
 
 /* utility */
 .btn {
@@ -411,6 +414,7 @@ footer {
   }
   .footer-top .container {
     flex-direction: column;
+    padding: 50px 0;
   }
   .footer-top .container article {
     margin-bottom: 30px;
