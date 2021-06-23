@@ -32,6 +32,7 @@ i {
   color: #fff;
   text-transform: uppercase;
   border: none;
+  transition: ease-in 0.3s;
 }
 
 .btn:hover {
@@ -73,6 +74,10 @@ header nav {
 .main-navigation li a {
   color: #fff;
   text-transform: uppercase;
+  transition: ease-in 0.2s;
+}
+.main-navigation li a:hover {
+  color: rgb(224, 222, 222);
 }
 
 header h1 {
@@ -139,7 +144,8 @@ header button {
 .image {
   flex: 0 0 25%;
   height: 20rem;
-  background-image: url(/images/work1.jpg);
+  background-image: linear-gradient(transparent, transparent),
+    url(/images/work1.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;
