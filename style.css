@@ -184,3 +184,41 @@ header button {
   font-weight: bold;
   padding-bottom: 10px;
 }
+
+/* team section */
+.team {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  margin: 150px 0;
+}
+.team article {
+  flex: 0 0 22%;
+  margin: 0 20px;
+}
+.team article p {
+  color: var(--text-color);
+}
+.name {
+  padding: 30px 0;
+}
+
+.name h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.name small {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.social {
+  margin: 30px 0;
+}
+
+.social i {
+  color: #b6b3b3;
+  border: 1px solid #b6b3b3;
+  padding: 8px 12px;
+}
