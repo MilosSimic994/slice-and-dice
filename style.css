@@ -43,13 +43,14 @@ body {
   justify-content: center;
 }
 
+/* header section */
 header {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  /* height: 70vh; */
+
   background-image: url(/images/header.jpg);
   color: #fff;
 }
@@ -92,6 +93,7 @@ header button {
   margin-top: 50px;
   margin-bottom: 150px;
 }
+/* benefits section */
 
 .benefits {
   width: 65%;
@@ -122,4 +124,63 @@ header button {
 .benefit p {
   line-height: 1.3;
   color: var(--text-color);
+}
+/* gallery section */
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  flex: 0 0 25%;
+  height: 20rem;
+  background-image: url(/images/work1.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+}
+.image:nth-child(2) {
+  background-image: url(/images/work2.jpg);
+}
+.image:nth-child(3) {
+  background-image: url(/images/work3.jpg);
+}
+.image:nth-child(4) {
+  background-image: url(/images/work4.jpg);
+}
+.image:nth-child(5) {
+  background-image: url(/images/work5.jpg);
+}
+.image:nth-child(6) {
+  background-image: url(/images/work6.jpg);
+}
+.image:nth-child(7) {
+  background-image: url(/images/work7.jpg);
+}
+.image:nth-child(8) {
+  background-image: url(/images/work8.jpg);
+}
+.image:hover {
+  background-image: linear-gradient(#db4537da, #db4537da),
+    url(/images/work1.jpg);
+}
+
+.image-title {
+  display: none;
+  text-align: center;
+  color: #fff;
+}
+
+.image:hover .image-title {
+  display: block;
+}
+.image h5 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 10px;
 }
