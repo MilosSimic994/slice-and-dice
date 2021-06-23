@@ -1,0 +1,125 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;700&display=swap");
+
+/* variable */
+:root {
+  --main-color: #db4437;
+  --text-color: #808080;
+}
+/* basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+/* utility */
+.btn {
+  cursor: pointer;
+  background: var(--main-color);
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #db4537c5;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* height: 70vh; */
+  background-image: url(/images/header.jpg);
+  color: #fff;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+}
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 50%;
+}
+
+.main-navigation li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+header h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 4rem;
+  width: 50%;
+  margin-top: 150px;
+  text-align: center;
+}
+
+header p {
+  width: 50%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.2rem;
+}
+
+header button {
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.benefits {
+  width: 65%;
+  margin: 150px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.benefit {
+  flex: 0 0 30%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 30px;
+  text-align: center;
+}
+
+.benefit h4 {
+  padding: 30px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.benefit p {
+  line-height: 1.3;
+  color: var(--text-color);
+}
